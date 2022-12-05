@@ -70,7 +70,7 @@ public class RubyController : MonoBehaviour
     void FixedUpdate()
     {
         //Setting Movement Vector
-        Vector2 position = transform.position;
+        Vector2 position = rigidbody2d.position;
 
         //Transforming position
         position.x = position.x + speed * horizontal * Time.deltaTime;
